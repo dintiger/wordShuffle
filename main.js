@@ -50,13 +50,13 @@ function startGame() {
   // console.log(word);
   // console.log("game start");
 
-  // timer = setInterval(() => {
-  //   if (time > 0) {
-  //     time--;
-  //     return (timerCount.innerHTML = time);
-  //   }
-  //   loseGame();
-  // }, 1000);
+  timer = setInterval(() => {
+    if (time > 0) {
+      time--;
+      return (timerCount.innerHTML = time);
+    }
+    loseGame();
+  }, 1000);
 }
 
 function rightAnswer() {

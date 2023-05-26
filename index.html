@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="words.js" defer></script>
+    <script src="main.js" defer></script>
+    <script src="app.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+
+    <title>World Shuffle Game</title>
+  </head>
+  <body>
+    <div id="confetti"><div>
+      <!-- mdialogbox -->
+      <!-- <dialog id="myDialog">This is a dialog window</dialog> -->
+    <div class="container">
+      <h1 class="header">Word Shuffle Game</h1>
+      <div class="content">
+        <p class="word"></p>
+        <div class="details">
+          <p class="hint"></p>
+          <p class="timer"></p>
+        </div>
+        <input
+          type="text"
+          class="input-guess"
+          placeholder="Insert your answer in lowerCase here"
+        />
+        <div class="buttons">
+          <button class="skip-word">Skip</button>
+          <button class="submit-word" onclick="">Submit</button>
+        </div>
+        <div class="block">
+          <p class="score">Player Score</p>
+          <p class="level">Level:</p>
+        </div>
+      </div>
+      <p class="life"></p>
+    </div>
+  </body>
+</html>

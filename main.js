@@ -23,7 +23,7 @@ let playerScore = 0;
 let playerLife = 3;
 let playerEmoji = "❤️❤️❤️";
 let randomWord = {};
-let gameLevel = "Level 1";
+let gameLevel = "Good Luck!";
 const jsConfetti = new JSConfetti();
 
 function startGame() {
@@ -65,9 +65,9 @@ function rightAnswer() {
   time = 15;
   clearInterval(timer);
   startGame();
-  if (playerScore > 5) {
-    levelUp();
-  }
+  // if (playerScore > 5) {
+  //   levelUp();
+  // }
   if (playerScore >= 100) {
     const choice = prompt(
       `You win the game sah!! You score: ${playerScore}, Restart GAME?`,
@@ -80,18 +80,18 @@ function rightAnswer() {
   }
 }
 
-function levelUp() {
-  // if player score more than ... ,
-  // cut time to half
-  console.log("levelup");
-  if (playerScore > 5);
-  {
-    gameLevel = "Level 2";
-    time = 8;
-    clearInterval(timer);
-    startGame();
-  }
-}
+// function levelUp() {
+//   // if player score more than ... ,
+//   // cut time to half
+//   console.log("levelup");
+//   if (playerScore > 5);
+//   {
+//     gameLevel = "Level 2";
+//     time = 8;
+//     clearInterval(timer);
+//     startGame();
+//   }
+// }
 
 function loseGame() {
   jsConfetti.addConfetti({
@@ -104,9 +104,9 @@ function loseGame() {
   time = 15;
 
   clearInterval(timer);
-  if (playerScore > 3) {
-    levelUp();
-  }
+  // if (playerScore > 3) {
+  //   levelUp();
+  // }
   startGame();
   if (playerLife < 0) {
     const choice = prompt(
@@ -165,9 +165,9 @@ function skipGame() {
   jsConfetti.addConfetti({
     emojis: ["💩", "🤬", "😩", "💩", "🥶", "💩"],
   });
-  if (playerScore > 3) {
-    levelUp();
-  }
+  // if (playerScore > 5) {
+  //   levelUp();
+  //   time = 8;
   word = "";
   time = 15;
   clearInterval(timer);
